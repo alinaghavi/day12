@@ -28,19 +28,29 @@ class Categories extends Component {
         if (this.state.isLoading) {
             return (
                 <div>
+                    <div className="page-title">
+                        Album Categories
+                    </div>
                     <p>
                         Loading...
                     </p>
                 </div>
             );
         }
-        return <ul>
-            {this.state.categories.map(category => (
-                <li key={category.id}>
-                    <a href={category.href}>{category.name} </a>
-                </li>
-            ))}
-        </ul>
+        return (
+            <>
+                <div className="page-title">
+                    Album Categories
+                </div>
+                <ul>
+                    {this.state.categories.map(category => (
+                        <li key={category.id}>
+                            <a href={category.href}>{category.name} </a>
+                        </li>
+                    ))}
+                </ul>
+            </>
+        )
     }
 }
 

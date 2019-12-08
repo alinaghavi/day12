@@ -7,9 +7,9 @@ import Categories from "./Categories";
 
 function App() {
     return (
-        <div className="App">
+        <div className="app">
             <nav>
-                <ul>
+                <ul className="nav-bar">
                     <li>
                         <a href="https://accounts.spotify.com/authorize?client_id=fc9cd03698bb431f8510647ec95622de&response_type=token&redirect_uri=http://localhost:3000/callback/">
                             Login
